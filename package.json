@@ -1,0 +1,31 @@
+{
+  "name": "webpack-angularjs",
+  "version": "1.0.0",
+  "description": "webpack setup for Angularjs app development",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build-dev": "SET NODE_ENV=development npm run clean && webpack",
+    "build-prod": "SET NODE_ENV=production npm run clean && webpack -p",
+    "serve": "webpack-dev-server"
+  },
+  "author": "Dainis S. <dainis.s@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "html-webpack-plugin": "^2.29.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "node-sass": "^4.5.3",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
